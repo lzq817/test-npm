@@ -1,0 +1,39 @@
+{
+  "name": "url-tools",
+  "version": "1.0.0",
+  "description": "A tool for handling URL parameters and UserAgent",
+  "main": "./dist/url-tools.umd.js",
+  "module": "./dist/url-tools.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/url-tools.es.js",
+      "require": "./dist/url-tools.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "url",
+    "params",
+    "useragent",
+    "browser"
+  ],
+  "author": "你的名字",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "conventional-changelog-cli": "^5.0.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.6",
+    "vite-plugin-dts": "^4.4.0"
+  }
+}
